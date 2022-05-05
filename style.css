@@ -1,0 +1,89 @@
+:root {
+  --header-height: 50px;
+  --padding: 10px;
+  --font-size-header: 2em;
+  --backcolor-base: #EEFCFF;
+  --font-size-m: 24px;
+  --button-background: linear-gradient(to right, #0EB3D3, rgba(255, 255, 255, 0.877), green);
+}
+
+* {
+  padding: 0;
+  list-style: none;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: var(--backcolor-base);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 var(--padding);
+}
+
+#header .header-left {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-header);
+}
+
+.logo {
+  height: calc(var(--header-height) * 0.9);
+  padding-right: var(--padding);
+}
+
+.wrap>.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--backcolor-base);
+  height: 600px;
+  padding: calc(var(--padding) * 5);
+}
+
+.info>.text-area {
+  display: flex;
+  align-items: center;
+  background-color: var(--backcolor-base);
+  flex-direction: column;
+  margin-bottom: var(--padding);
+}
+ 
+.info-small {
+  color: darkslategray;
+}
+
+h2.info-bold {
+  margin: var(--padding);
+}
+
+.moreBtn {
+  margin-top: calc(var(--padding) * 1.5);
+  padding: calc(var(--padding) * 0.5) calc(var(--padding) * 4);
+  border-radius: 28px;
+  font-size: var(--font-size-m);
+  border: none;
+  background: var(--button-background);
+}
+
+.wrap>.info>.text-area>.info-blue {
+  color: rgb(0, 200, 225);
+  text-decoration: underline;
+}
+
+li button {
+  border: none;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider>.action {
+  margin-right: 10px;
+  height: 2px;
+  width: 50px;
+  background-color: lightgrey;
+}
