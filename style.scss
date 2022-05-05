@@ -1,0 +1,134 @@
+$fontSize-h:2em;
+$fontSize-m:24px;
+$headerHeight: 50px;
+$padding:10px;
+$padding: 10px;
+$backColor-base:#EEFCFF;
+$buttonBackground:linear-gradient(to right, #0EB3D3, rgba(255, 255, 255, 0.877), green);
+
+* {
+  padding: 0;
+  
+  list-style: none;
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: $backColor-base;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $headerHeight;
+  padding: 0 $padding;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    font-size: $fontSize-h;
+  }
+}
+
+.logo {
+  height: $headerHeight * 0.9;
+  padding-right: $padding;
+}
+
+.wrap {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backColor-base;
+    height: 600px;
+    padding: calc($padding * 5);
+
+    button {
+      border: none;
+    }
+
+    .text-area {
+      display: flex;
+      align-items: center;
+      background-color: $backColor-base;
+      flex-direction: column;
+      margin-bottom: $padding;
+
+      .info-blue {
+        color: rgb(0, 200, 225);
+        text-decoration: underline;
+      }
+
+      .info-small {
+        color: darkslategray;
+      }
+
+      .info-bold {
+        margin: $padding;
+      }
+
+      .moreBtn {
+        margin-top: $padding * 1.5;
+        padding: $padding * 0.5 $padding * 4;
+        border-radius: 28px;
+        font-size: $fontSize-m;
+        border: none;
+        background: $buttonBackground;
+      }
+    }
+
+    .slider {
+      display: flex;
+      align-items: center;
+
+      .action {
+        margin-right: 10px;
+        height: 2px;
+        width: 50px;
+        background-color: lightgrey;
+      }
+    }
+
+  }
+}
+
+
+.slide-in {
+  transform: translateX(0%);
+  transition: 1s;
+}
+
+.slide-out {
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+/* 
+.slide-in {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
+}
+
+.slide-out {
+  animation: slide-out 1s forwards;
+  -webkit-animation: slide-out 1s forwards;
+}
+  
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+} */
